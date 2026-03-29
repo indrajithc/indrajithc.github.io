@@ -201,6 +201,96 @@ export const siteData = {
   },
 };
 
+export const homeData = {
+  hero: {
+    name: "Indrajith C",
+    role: "Principal Frontend Engineer",
+    lighthouseScore: 99,
+    chips: [
+      { icon: "bolt", label: "High Performance" },
+      { icon: "architecture", label: "System Design" },
+    ],
+  },
+  engineering: {
+    streakJs: {
+      tags: ["Streak JS", "Next.js", "R&D"],
+    },
+  },
+  trajectory: [
+    {
+      period: "NOV 2025 — PRESENT",
+      role: "Technical Lead",
+      company: "Valoriz Digital",
+      description:
+        "Directing R&D on Streak JS and maintaining 98-99 Lighthouse scores across flagship products. Implementing Azure-based automated build systems and integrating OpenAI capabilities into frontend architectures.",
+      tags: ["Streak JS", "OpenAI Integration", "Lighthouse 99"],
+      hasImage: true,
+    },
+    {
+      period: "OCT 2024 — NOV 2025",
+      role: "Technical Lead",
+      company: "Valoriz Digital",
+      description:
+        "Spearheading performance optimization focusing on LCP and CLS metrics. Developed Docker and Jenkins-based pipelines to automate critical CSS generation and asset delivery.",
+    },
+    {
+      period: "DEC 2023 — SEP 2024",
+      role: "Technical Lead",
+      company: "Valoriz Digital",
+      description:
+        "Architected Next.js headless solutions and implemented secure Azure AD B2C authentication. Managed complex data migration strategies for global client portals.",
+    },
+    {
+      period: "APR 2021 — DEC 2023",
+      role: "Senior Software Engineer",
+      company: "Valoriz Digital",
+      description:
+        "Engineered robust POS systems and led major performance/SEO transformations for B2B e-commerce platforms during large-scale migrations.",
+    },
+    {
+      period: "NOV 2019 — MAR 2021",
+      role: "Software Engineer",
+      company: "Valoriz Digital",
+      description:
+        "Developed AI-based product recognition UIs using React and Redux, focusing on intuitive interaction patterns and state management.",
+    },
+  ],
+  certifications: [
+    {
+      icon: "verified",
+      title: "Meta Front-End Developer Professional",
+      type: "Professional Certificate",
+    },
+    {
+      icon: "code",
+      title: "Meta Advanced React",
+      type: "Advanced Certification",
+    },
+  ],
+  education: [
+    {
+      level: "Post-Graduation",
+      degree: "MCA",
+      institution: "Rajiv Gandhi Institute of Technology",
+      period: "2017 — 2019",
+    },
+    {
+      level: "Under-Graduation",
+      degree: "BSc CS",
+      institution: "University Institute of Technology",
+      period: "2013 — 2016",
+    },
+  ],
+  contact: {
+    email: "indranspeaks@gmail.com",
+    phone: "+91 8281 05 6261",
+    location: "Thiruvananthapuram, Kerala, India",
+    linkedin: "https://www.linkedin.com/in/indrajithc/",
+    github: "https://github.com/indrajithc",
+    portfolioUrl: "https://indrajithc.github.io/",
+  },
+};
+
 export const siteTranslations = {
   "nav.home": "HOME",
   "nav.arsenal": "ARSENAL",

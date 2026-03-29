@@ -47,4 +47,24 @@
     background: #3c4a42;
     border-radius: 10px;
   }
+
+  .text-glow {
+    text-shadow: 0 0 20px rgba(78, 222, 163, 0.3);
+  }
+
+  .glass-card {
+    background: rgba(31, 31, 31, 0.4);
+    backdrop-filter: blur(24px);
+  }
+
+  .data-stream {
+    background: linear-gradient(90deg, transparent, rgba(78, 222, 163, 0.1), transparent);
+    background-size: 200% 100%;
+    animation: stream 4s infinite linear;
+  }
+}
+
+@keyframes stream {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
