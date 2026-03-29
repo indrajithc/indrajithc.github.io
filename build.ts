@@ -1,12 +1,13 @@
 import { renderPage } from "./src/lib/renderer";
 import { routes } from "./src/lib/router";
-import { mkdir } from "fs/promises";
+import { mkdir, readdir, copyFile } from "fs/promises";
 import { join } from "path";
 
 const OUT_DIR = "./out";
+const PUBLIC_DIR = "./public";
 
 async function compileCss() {
-  await mkdir(OUT_DIR, { recursive: true });
+  await mkdir(PUBLIC_DIR, { recursive: true });
   console.log("  ⟳ Compiling CSS...");
   const proc = Bun.spawn(
     [
@@ -15,7 +16,7 @@ async function compileCss() {
       "-i",
       "./src/styles/global.css",
       "-o",
-      `${OUT_DIR}/styles.css`,
+      `${PUBLIC_DIR}/styles.css`,
       "--minify",
     ],
     { stdout: "inherit", stderr: "inherit" }
@@ -25,7 +26,16 @@ async function compileCss() {
     console.error("  ✗ Tailwind CSS compilation failed");
     process.exit(1);
   }
-  console.log("  ✓ styles.css");
+  console.log("  ✓ public/styles.css");
+}
+
+async function copyPublicToOut() {
+  await mkdir(OUT_DIR, { recursive: true });
+  const files = await readdir(PUBLIC_DIR);
+  for (const file of files) {
+    await copyFile(join(PUBLIC_DIR, file), join(OUT_DIR, file));
+    console.log(`  ✓ public/${file} → out/${file}`);
+  }
 }
 
 async function build() {
@@ -33,6 +43,7 @@ async function build() {
   const start = Date.now();
 
   await compileCss();
+  await copyPublicToOut();
 
   for (const route of routes) {
     try {
