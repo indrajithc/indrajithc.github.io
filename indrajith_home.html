@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>INDRAJITH C | THE TECHNICAL LEAD</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#e2e2e2",
+              "inverse-primary": "#006c49",
+              "on-primary-container": "#00422b",
+              "inverse-surface": "#e2e2e2",
+              "inverse-on-surface": "#303030",
+              "primary-container": "#10b981",
+              "on-secondary-container": "#e6ecff",
+              "secondary": "#adc6ff",
+              "on-surface-variant": "#bbcabf",
+              "on-primary-fixed-variant": "#005236",
+              "on-surface": "#e2e2e2",
+              "surface-container-lowest": "#0e0e0e",
+              "primary-fixed": "#6ffbbe",
+              "on-error": "#690005",
+              "tertiary-container": "#fc7c78",
+              "on-secondary": "#002e6a",
+              "surface-container": "#1f1f1f",
+              "on-tertiary-fixed-variant": "#842225",
+              "tertiary": "#ffb3af",
+              "tertiary-fixed-dim": "#ffb3af",
+              "tertiary-fixed": "#ffdad7",
+              "surface-container-low": "#1b1b1b",
+              "surface-container-highest": "#353535",
+              "outline-variant": "#3c4a42",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2a",
+              "on-primary-fixed": "#002113",
+              "on-secondary-fixed": "#001a42",
+              "error": "#ffb4ab",
+              "on-tertiary-fixed": "#410005",
+              "surface-tint": "#4edea3",
+              "outline": "#86948a",
+              "surface": "#131313",
+              "on-tertiary-container": "#711419",
+              "background": "#131313",
+              "surface-dim": "#131313",
+              "primary-fixed-dim": "#4edea3",
+              "on-secondary-fixed-variant": "#004395",
+              "on-tertiary": "#650911",
+              "on-error-container": "#ffdad6",
+              "surface-variant": "#353535",
+              "on-primary": "#003824",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary": "#4edea3",
+              "secondary-fixed": "#d8e2ff",
+              "surface-bright": "#393939",
+              "secondary-container": "#0566d9"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>body {
+    font-family: "Inter", sans-serif
+    }
+.font-space-grotesk {
+    font-family: "Space Grotesk", sans-serif
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.glass-nav {
+    backdrop-filter: blur(24px)
+    }
+.noise-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDGv4btBM0pTQYG-7cj55JxNBSaubVfQ5NRM2z7j_InrhU1fHSvb4_Xmx6-gdIWd0ff_EwGQDo9OFFmozkXMxp4lpbTvqIt4nHfrTj1AyId3NhWZNtrk1GVmSHhBJaZUD_msGWh7fmG15QWTzZ4jBdlq98CrHzTiX6D5faRIIFy_N3kdUCb6dUhZT4gHsFw4mmMfy_c6QKVtX1NYo1JveuVTGbLW4N-7oMOIHHqtwHg4gLQupRcQvu1BxJVC3EjgefMrAr_MW78Sw4z);
+    opacity: 0.03
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden">
+<!-- NAVIGATION SHELL -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-2xl shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400">terminal</span>
+<span class="text-xl font-black tracking-widest text-emerald-400 font-space-grotesk uppercase">ARCHITECT</span>
+</div>
+<div class="hidden md:flex gap-8 items-center font-space-grotesk tracking-tighter uppercase font-bold">
+<a class="text-emerald-400 font-bold hover:text-emerald-300 transition-colors duration-300" href="#">HOME</a>
+<a class="text-neutral-400 hover:text-emerald-300 transition-colors duration-300" href="#">STACK</a>
+<a class="text-neutral-400 hover:text-emerald-300 transition-colors duration-300" href="#">IMPACT</a>
+<a class="text-neutral-400 hover:text-emerald-300 transition-colors duration-300" href="#">CONTACT</a>
+</div>
+<button class="scale-95 active:scale-90 transition-transform text-emerald-400">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- HERO SECTION -->
+<main class="relative min-h-screen flex flex-col justify-center px-6 pt-24 overflow-hidden">
+<div class="absolute inset-0 noise-bg pointer-events-none"></div>
+<!-- Background Decorative Elements -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-secondary-container/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<!-- Performance Badge -->
+<div class="inline-flex items-center gap-3 bg-surface-container-high px-4 py-2 rounded-full mb-8 border border-outline-variant/15">
+<div class="relative flex items-center justify-center w-10 h-10">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="20" cy="20" fill="transparent" r="18" stroke="currentColor" stroke-width="3"></circle>
+<circle class="text-primary" cx="20" cy="20" fill="transparent" r="18" stroke="currentColor" stroke-dasharray="113" stroke-dashoffset="1" stroke-width="3"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold text-primary">99</span>
+</div>
+<span class="text-[10px] font-label font-bold uppercase tracking-[0.2em] text-on-surface-variant">Lighthouse Performance Metric</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-none mb-6">
+                    INDRAJITH C <br/>
+<span class="text-primary">THE TECHNICAL LEAD</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
+                    ENGINEERING PERFORMANCE. <br/>
+<span class="font-headline font-medium tracking-wide">SCALING ARCHITECTURE.</span>
+</p>
+<div class="flex flex-wrap gap-6">
+<button class="px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-headline font-bold uppercase tracking-widest rounded-lg shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
+                        Explore My Impact
+                    </button>
+<button class="px-8 py-4 border border-outline-variant/30 text-on-surface font-headline font-bold uppercase tracking-widest rounded-lg hover:bg-primary/10 transition-colors">
+                        View Stack
+                    </button>
+</div>
+</div>
+<!-- Asymmetric Visual Element -->
+<div class="lg:col-span-4 relative hidden lg:block">
+<div class="aspect-[4/5] bg-surface-container rounded-xl overflow-hidden shadow-2xl relative group">
+<img alt="Code editor interface" class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="abstract close-up of high-contrast code on a dark screen with glowing neon emerald highlights and soft background bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsJGAnqriLc8nwGHbhoV9wYOR3E5HCRgmMWY52QR0iqxlTouXvBPF_XfT7V_7sxnbg1P8lr6avgm05bfH9pi2xVuhdrJLrNy0QzX5yYOU2H83oVDVDDNb8rUm4eHH6um1_Z2vPD-sqczDYDlxvYv-JWHtLfQEcFNtdXYlJApJGAFNPHwBE2W9wb-Hd_wfKmcpStrFF1WReh9bTME1b3JqVTevSPtNk5Z5QI93BfGOFkJo8aBUbc5gyyC4MD7fGdq5GUr82OZ3bySZe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="text-[10px] font-label font-bold text-primary mb-1">SYSTEM STATUS</div>
+<div class="text-xs font-mono text-on-surface-variant">OPTIMIZED FOR 10M+ REQS/SEC</div>
+</div>
+</div>
+<!-- Floating Decorative Card -->
+<div class="absolute -bottom-10 -left-10 bg-surface-container-high/80 backdrop-blur-xl p-6 rounded-xl border border-outline-variant/10 shadow-2xl">
+<div class="flex items-center gap-4 mb-4">
+<div class="p-2 bg-primary/10 rounded-lg">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<span class="font-headline text-sm font-bold tracking-tight">LATENCY REDUCTION</span>
+</div>
+<div class="text-3xl font-headline font-bold text-primary">-45%</div>
+</div>
+</div>
+</div>
+</main>
+<!-- CORE COMPETENCIES (BENTO GRID) -->
+<section class="py-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container rounded-xl p-12 flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-12 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[12rem]">cloud_done</span>
+</div>
+<h3 class="font-headline text-4xl font-bold mb-4 tracking-tight">Cloud Infrastructure</h3>
+<p class="text-on-surface-variant max-w-md">Orchestrating resilient multi-cloud environments using Kubernetes and Terraform for enterprise-grade scalability.</p>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-12 flex flex-col justify-between group">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">bolt</span>
+<div>
+<h3 class="font-headline text-3xl font-bold mb-2 tracking-tight">Performance</h3>
+<p class="text-on-primary/80">Sub-second response times at global scale.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-12 flex flex-col justify-between hover:scale-[1.02] transition-transform cursor-default">
+<span class="material-symbols-outlined text-emerald-400 text-4xl">psychology</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 tracking-tight">Tech Strategy</h3>
+<p class="text-on-surface-variant text-sm">Translating business goals into robust technical roadmaps.</p>
+</div>
+</div>
+<div class="md:col-span-8 bg-surface-container rounded-xl p-12 grid grid-cols-2 gap-8 border border-outline-variant/10">
+<div class="flex flex-col gap-2">
+<div class="text-4xl font-headline font-bold text-on-surface">12+</div>
+<div class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">YEARS EXP</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="text-4xl font-headline font-bold text-on-surface">50M+</div>
+<div class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">USERS REACHED</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="text-4xl font-headline font-bold text-on-surface">0.01%</div>
+<div class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">ERROR RATE</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="text-4xl font-headline font-bold text-on-surface">A++</div>
+<div class="text-[10px] font-label font-bold uppercase tracking-widest text-on-surface-variant">SECURITY AUDIT</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="w-full border-t border-neutral-800/20 bg-neutral-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 gap-6 w-full max-w-7xl mx-auto">
+<div class="font-space-grotesk font-bold text-neutral-200">
+                INDRAJITH C / <span class="text-emerald-500">TECHNICAL LEAD</span>
+</div>
+<div class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-500">
+                © 2024 OBSIDIAN ARCHITECT. ENGINEERED FOR PERFORMANCE.
+            </div>
+<div class="flex gap-8">
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">GITHUB</a>
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">LINKEDIN</a>
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">SOURCE</a>
+</div>
+</div>
+</footer>
+<!-- BOTTOM NAV (MOBILE) -->
+<div class="md:hidden fixed bottom-8 left-1/2 -translate-x-1/2 w-[auto] rounded-full px-4 py-2 bg-neutral-900/60 backdrop-blur-xl z-50 flex gap-8 items-center shadow-2xl shadow-emerald-900/20">
+<a class="bg-emerald-500/10 text-emerald-400 rounded-full p-3 scale-110 duration-200" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+</a>
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">layers</span>
+</a>
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">psychology</span>
+</a>
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</body></html>

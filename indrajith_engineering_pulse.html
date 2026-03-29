@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Engineering Pulse | ARCHITECT.V1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#003824",
+              "on-tertiary-fixed-variant": "#842225",
+              "surface-bright": "#393939",
+              "inverse-on-surface": "#303030",
+              "on-secondary-container": "#e6ecff",
+              "tertiary-fixed": "#ffdad7",
+              "secondary-container": "#0566d9",
+              "tertiary-container": "#fc7c78",
+              "on-secondary-fixed": "#001a42",
+              "primary": "#4edea3",
+              "tertiary": "#ffb3af",
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#006c49",
+              "outline": "#86948a",
+              "surface-variant": "#353535",
+              "secondary-fixed": "#d8e2ff",
+              "on-primary-fixed": "#002113",
+              "surface": "#131313",
+              "on-tertiary": "#650911",
+              "on-error": "#690005",
+              "on-error-container": "#ffdad6",
+              "surface-container-highest": "#353535",
+              "on-surface-variant": "#bbcabf",
+              "primary-container": "#10b981",
+              "outline-variant": "#3c4a42",
+              "on-secondary-fixed-variant": "#004395",
+              "surface-container-low": "#1b1b1b",
+              "error-container": "#93000a",
+              "on-tertiary-fixed": "#410005",
+              "on-surface": "#e2e2e2",
+              "primary-fixed": "#6ffbbe",
+              "surface-container": "#1f1f1f",
+              "background": "#131313",
+              "on-primary-container": "#00422b",
+              "tertiary-fixed-dim": "#ffb3af",
+              "surface-dim": "#131313",
+              "on-background": "#e2e2e2",
+              "secondary": "#adc6ff",
+              "error": "#ffb4ab",
+              "surface-tint": "#4edea3",
+              "on-primary-fixed-variant": "#005236",
+              "secondary-fixed-dim": "#adc6ff",
+              "primary-fixed-dim": "#4edea3",
+              "on-tertiary-container": "#711419",
+              "inverse-surface": "#e2e2e2",
+              "surface-container-lowest": "#0e0e0e",
+              "on-secondary": "#002e6a"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(27, 27, 27, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .contribution-cell {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0e0e0e;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #3c4a42;
+            border-radius: 10px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body selection:bg-primary/30 selection:text-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-zinc-950/40 backdrop-blur-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<span class="text-xl font-bold tracking-tighter text-zinc-100 font-headline">ARCHITECT.V1</span>
+<div class="hidden md:flex items-center gap-8 font-space-grotesk tracking-tight font-medium text-sm">
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors duration-300" href="#">Work</a>
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors duration-300" href="#">Experience</a>
+<a class="text-emerald-400 font-bold border-b-2 border-emerald-400 pb-1" href="#">Stack</a>
+<a class="text-zinc-400 hover:text-zinc-100 transition-colors duration-300" href="#">Github</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2 rounded-lg text-sm font-bold tracking-tight hover:scale-95 active:scale-90 transition-transform">
+                Download Resume
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto space-y-20">
+<!-- Header Section -->
+<header class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest border border-outline-variant/20">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[10px] font-label uppercase tracking-widest font-bold text-primary">Live Pulse Operational</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter text-on-surface">
+                Engineering <span class="text-primary italic">Pulse</span>
+</h1>
+<p class="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
+                Real-time architectural monitoring of open-source contributions, repository health, and technical evolution across the ecosystem.
+            </p>
+</header>
+<!-- Global Contribution Graph (Bento Large) -->
+<section class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+<div class="lg:col-span-3 bg-surface-container rounded-xl p-8 border border-outline-variant/10 shadow-2xl relative overflow-hidden">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="font-headline text-xl font-bold">Contribution Latency</h3>
+<p class="text-on-surface-variant text-xs font-label">2,481 commits in the last year</p>
+</div>
+<div class="flex gap-1">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" data-icon="query_stats">query_stats</span>
+</div>
+</div>
+<!-- GitHub Style Grid -->
+<div class="overflow-x-auto pb-4 custom-scrollbar">
+<div class="flex gap-1 min-w-[800px]">
+<!-- Column Loop (Last 52 weeks) -->
+<div class="grid grid-rows-7 gap-1" id="week-column">
+<div class="contribution-cell bg-surface-container-highest/30"></div>
+<div class="contribution-cell bg-primary/20"></div>
+<div class="contribution-cell bg-surface-container-highest/30"></div>
+<div class="contribution-cell bg-primary/40"></div>
+<div class="contribution-cell bg-surface-container-highest/30"></div>
+<div class="contribution-cell bg-primary/60"></div>
+<div class="contribution-cell bg-surface-container-highest/30"></div>
+</div>
+<!-- Repeats for visualization -->
+<script>
+                            const grid = document.querySelector('.flex.gap-1.min-w-\\[800px\\]');
+                            const column = document.getElementById('week-column');
+                            const intensities = ['bg-surface-container-highest/30', 'bg-primary/10', 'bg-primary/30', 'bg-primary/60', 'bg-primary'];
+                            for(let i=0; i<51; i++) {
+                                const newCol = column.cloneNode(true);
+                                newCol.removeAttribute('id');
+                                const cells = newCol.querySelectorAll('.contribution-cell');
+                                cells.forEach(c => {
+                                    c.className = `contribution-cell ${intensities[Math.floor(Math.random() * intensities.length)]}`;
+                                });
+                                grid.appendChild(newCol);
+                            }
+                        </script>
+</div>
+</div>
+<div class="mt-6 flex items-center justify-between text-[10px] font-label uppercase text-on-surface-variant tracking-widest">
+<div class="flex items-center gap-4">
+<span>Jan</span><span>Mar</span><span>May</span><span>Jul</span><span>Sep</span><span>Nov</span>
+</div>
+<div class="flex items-center gap-1">
+<span>Less</span>
+<div class="contribution-cell bg-surface-container-highest/30"></div>
+<div class="contribution-cell bg-primary/20"></div>
+<div class="contribution-cell bg-primary/40"></div>
+<div class="contribution-cell bg-primary/70"></div>
+<div class="contribution-cell bg-primary"></div>
+<span>More</span>
+</div>
+</div>
+</div>
+<!-- Stats Sidebar -->
+<div class="lg:col-span-1 flex flex-col gap-6">
+<div class="bg-surface-container-high rounded-xl p-6 flex flex-col justify-between h-full border border-outline-variant/10">
+<p class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Top Language</p>
+<div class="mt-4">
+<div class="text-4xl font-headline font-bold text-primary">Rust</div>
+<p class="text-xs text-on-surface-variant mt-1">42% of total volume</p>
+</div>
+<div class="mt-6 h-1 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[42%]"></div>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-6 flex flex-col justify-between h-full border border-outline-variant/10">
+<p class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Avg Frequency</p>
+<div class="mt-4">
+<div class="text-4xl font-headline font-bold text-on-surface">6.8</div>
+<p class="text-xs text-on-surface-variant mt-1">Commits per day</p>
+</div>
+<div class="mt-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="trending_up">trending_up</span>
+<span class="text-[10px] font-label text-primary">+12% from last month</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Repositories -->
+<section class="space-y-8">
+<div class="flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-headline font-bold">Active Nodes</h2>
+<p class="text-on-surface-variant text-sm mt-1">Primary architectural focus zones</p>
+</div>
+<button class="text-xs font-label uppercase tracking-widest text-primary font-bold flex items-center gap-2 group">
+                    View Registry
+                    <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Repo Card 1 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-300 transform hover:-translate-y-2">
+<div class="p-8 space-y-6">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="terminal">terminal</span>
+<div class="flex items-center gap-3 text-on-surface-variant font-label text-xs">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span> 1.2k
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="fork_right">fork_right</span> 204
+                                </span>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Obsidian-Core-Runtime</h4>
+<p class="text-sm text-on-surface-variant mt-3 line-clamp-2">High-performance distributed runtime engine built for low-latency state synchronization in edge environments.</p>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
+<span>Rust</span>
+<span>88%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary w-[88%]"></div>
+<div class="h-full bg-blue-400 w-[12%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Repo Card 2 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-300 transform hover:-translate-y-2">
+<div class="p-8 space-y-6">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="data_object">data_object</span>
+<div class="flex items-center gap-3 text-on-surface-variant font-label text-xs">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span> 840
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="fork_right">fork_right</span> 112
+                                </span>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Aether-UI-System</h4>
+<p class="text-sm text-on-surface-variant mt-3 line-clamp-2">A deterministic, accessibility-first component library for mission-critical dashboard interfaces.</p>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
+<span>TypeScript</span>
+<span>94%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary w-[94%]"></div>
+<div class="h-full bg-secondary w-[6%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Repo Card 3 -->
+<div class="group bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-300 transform hover:-translate-y-2">
+<div class="p-8 space-y-6">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="settings_input_component">settings_input_component</span>
+<div class="flex items-center gap-3 text-on-surface-variant font-label text-xs">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span> 45
+                                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="fork_right">fork_right</span> 8
+                                </span>
+</div>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">WASM-Stream-Relay</h4>
+<p class="text-sm text-on-surface-variant mt-3 line-clamp-2">Experimental WebAssembly module for real-time binary stream processing in the browser.</p>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
+<span>C++</span>
+<span>65%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary w-[65%]"></div>
+<div class="h-full bg-zinc-500 w-[35%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Log / Commit Stream -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-2 space-y-8">
+<div class="flex items-center gap-4">
+<h2 class="text-3xl font-headline font-bold">Activity Log</h2>
+<div class="h-[1px] flex-grow bg-outline-variant/20"></div>
+</div>
+<div class="space-y-4">
+<!-- Commit Item 1 -->
+<div class="flex gap-6 group">
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="commit">commit</span>
+</div>
+<div class="w-[1px] h-full bg-outline-variant/20 mt-2"></div>
+</div>
+<div class="flex-grow pb-10">
+<div class="flex justify-between items-start">
+<div>
+<h5 class="text-sm font-bold text-on-surface">Refactored memory allocation in core scheduler</h5>
+<p class="text-xs text-on-surface-variant mt-1 font-mono uppercase">hash: 7f3b8a2 • obsidian-core</p>
+</div>
+<span class="text-[10px] font-label text-on-surface-variant whitespace-nowrap">4 HOURS AGO</span>
+</div>
+<div class="mt-4 p-4 rounded bg-surface-container-low border border-outline-variant/10 text-xs text-on-surface-variant font-mono leading-relaxed">
+                                - Optimised block size for edge nodes<br/>
+                                - Reduced heap fragmentation by 14%<br/>
+                                - Updated safety wrappers for pointer arithmetic
+                            </div>
+</div>
+</div>
+<!-- Commit Item 2 -->
+<div class="flex gap-6 group">
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="merge">merge</span>
+</div>
+<div class="w-[1px] h-full bg-outline-variant/20 mt-2"></div>
+</div>
+<div class="flex-grow pb-10">
+<div class="flex justify-between items-start">
+<div>
+<h5 class="text-sm font-bold text-on-surface">Merged PR #442: Feature/Telemetry-v2</h5>
+<p class="text-xs text-on-surface-variant mt-1 font-mono uppercase">hash: d2e991c • aether-ui</p>
+</div>
+<span class="text-[10px] font-label text-on-surface-variant whitespace-nowrap">1 DAY AGO</span>
+</div>
+</div>
+</div>
+<!-- Commit Item 3 -->
+<div class="flex gap-6 group">
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="new_releases">new_releases</span>
+</div>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<div>
+<h5 class="text-sm font-bold text-on-surface">Published Release v1.0.4-beta</h5>
+<p class="text-xs text-on-surface-variant mt-1 font-mono uppercase">tag: stable-lts • wasm-stream</p>
+</div>
+<span class="text-[10px] font-label text-on-surface-variant whitespace-nowrap">3 DAYS AGO</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Terminal Mockup / Stack Info -->
+<div class="lg:col-span-1 space-y-8">
+<div class="bg-zinc-950 rounded-xl border border-outline-variant/20 overflow-hidden shadow-2xl">
+<div class="bg-surface-container px-4 py-2 flex items-center gap-2 border-b border-outline-variant/10">
+<div class="flex gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-red-500/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant ml-2">arch_monitor --v</span>
+</div>
+<div class="p-6 font-mono text-[11px] leading-loose text-primary/80">
+<p>&gt; Fetching system metrics...</p>
+<p>&gt; <span class="text-on-surface">UPTIME:</span> 342:12:08:44</p>
+<p>&gt; <span class="text-on-surface">CORES:</span> 128 Optimal</p>
+<p>&gt; <span class="text-on-surface">STATUS:</span> <span class="text-primary font-bold">NOMINAL</span></p>
+<p class="mt-4 text-on-surface-variant">--- Active Stack ---</p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="px-2 py-0.5 bg-surface-container-highest text-[9px] rounded-full text-on-surface">Kubernetes</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[9px] rounded-full text-on-surface">gRPC</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[9px] rounded-full text-on-surface">Redis</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[9px] rounded-full text-on-surface">PostgreSQL</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-[9px] rounded-full text-on-surface">Terraform</span>
+</div>
+<p class="mt-6 animate-pulse">_</p>
+</div>
+</div>
+<div class="bg-gradient-to-br from-primary/10 to-transparent p-8 rounded-xl border border-primary/20">
+<h4 class="font-headline font-bold text-lg">System Health</h4>
+<p class="text-sm text-on-surface-variant mt-2">Current architectural integrity is within expected operational parameters.</p>
+<div class="mt-6 flex flex-col gap-4">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Build Success Rate</span>
+<span class="text-primary font-bold">99.8%</span>
+</div>
+<div class="h-1 bg-surface-container-highest rounded-full">
+<div class="h-full bg-primary w-[99.8%] shadow-[0_0_8px_rgba(78,222,163,0.4)]"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-zinc-950 w-full py-12 border-t border-zinc-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 gap-6">
+<p class="font-inter text-[10px] uppercase tracking-[0.2em] font-semibold text-zinc-500">
+                © 2024 OBSIDIAN_ARCHITECT // ALL_RIGHTS_RESERVED
+            </p>
+<div class="flex items-center gap-12 font-inter text-[10px] uppercase tracking-[0.2em] font-semibold">
+<a class="text-zinc-500 hover:text-emerald-400 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">X</a>
+<a class="text-zinc-500 hover:text-emerald-400 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">LINKEDIN</a>
+<a class="text-zinc-500 hover:text-emerald-400 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">GITHUB</a>
+<a class="text-zinc-500 hover:text-emerald-400 transition-colors duration-300 opacity-80 hover:opacity-100" href="#">READ.CV</a>
+</div>
+</div>
+</footer>
+</body></html>

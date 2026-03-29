@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arsenal | Indrajith C.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #131313;
+        }
+        .font-headline {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#e2e2e2",
+                        "inverse-primary": "#006c49",
+                        "on-primary-container": "#00422b",
+                        "inverse-surface": "#e2e2e2",
+                        "inverse-on-surface": "#303030",
+                        "primary-container": "#10b981",
+                        "on-secondary-container": "#e6ecff",
+                        "secondary": "#adc6ff",
+                        "on-surface-variant": "#bbcabf",
+                        "on-primary-fixed-variant": "#005236",
+                        "on-surface": "#e2e2e2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-fixed": "#6ffbbe",
+                        "on-error": "#690005",
+                        "tertiary-container": "#fc7c78",
+                        "on-secondary": "#002e6a",
+                        "surface-container": "#1f1f1f",
+                        "on-tertiary-fixed-variant": "#842225",
+                        "tertiary": "#ffb3af",
+                        "tertiary-fixed-dim": "#ffb3af",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-container-low": "#1b1b1b",
+                        "surface-container-highest": "#353535",
+                        "outline-variant": "#3c4a42",
+                        "error-container": "#93000a",
+                        "surface-container-high": "#2a2a2a",
+                        "on-primary-fixed": "#002113",
+                        "on-secondary-fixed": "#001a42",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#410005",
+                        "surface-tint": "#4edea3",
+                        "outline": "#86948a",
+                        "surface": "#131313",
+                        "on-tertiary-container": "#711419",
+                        "background": "#131313",
+                        "surface-dim": "#131313",
+                        "primary-fixed-dim": "#4edea3",
+                        "on-secondary-fixed-variant": "#004395",
+                        "on-tertiary": "#650911",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#353535",
+                        "on-primary": "#003824",
+                        "secondary-fixed-dim": "#adc6ff",
+                        "primary": "#4edea3",
+                        "secondary-fixed": "#d8e2ff",
+                        "surface-bright": "#393939",
+                        "secondary-container": "#0566d9"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface selection:bg-primary/30 selection:text-primary min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-neutral-950/40 backdrop-blur-2xl fixed top-0 w-full z-50 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-emerald-400 scale-95 active:scale-90 transition-transform cursor-pointer" data-icon="terminal">terminal</span>
+<span class="text-xl font-black tracking-widest text-emerald-400 font-headline uppercase">ARCHITECT</span>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 font-headline tracking-tighter uppercase font-bold hover:text-emerald-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-emerald-400 font-headline tracking-tighter uppercase font-bold hover:text-emerald-300 transition-colors duration-300" href="#">Arsenal</a>
+<a class="text-neutral-400 font-headline tracking-tighter uppercase font-bold hover:text-emerald-300 transition-colors duration-300" href="#">Systems</a>
+<a class="text-neutral-400 font-headline tracking-tighter uppercase font-bold hover:text-emerald-300 transition-colors duration-300" href="#">Connect</a>
+</nav>
+<span class="material-symbols-outlined text-emerald-400 scale-95 active:scale-90 transition-transform cursor-pointer" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="pt-32 pb-40 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-24 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-3xl">
+<h1 class="text-6xl md:text-8xl font-headline font-bold leading-none tracking-tighter text-on-surface mb-8">
+                    TECHNICAL<br/><span class="text-primary">ARSENAL_</span>
+</h1>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-xl">
+                    High-velocity engineering stack optimized for scale, performance, and architectural integrity. This is the foundation upon which complex digital ecosystems are built.
+                </p>
+</div>
+<div class="hidden lg:block w-32 h-32 border-l border-b border-outline-variant/30 relative">
+<div class="absolute bottom-4 left-4 text-[10px] tracking-[0.2em] uppercase text-neutral-500 font-label">
+                    v.2024.04
+                </div>
+</div>
+</section>
+<!-- Bento Grid Skills -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Frontend Card -->
+<div class="md:col-span-8 bg-surface-container-low p-8 md:p-12 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-9xl" data-icon="layers">layers</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-[10px] tracking-[0.3em] uppercase text-primary font-label mb-4">Core Interface</h2>
+<h3 class="text-4xl font-headline font-bold mb-8">Frontend Engineering</h3>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-label tracking-widest uppercase text-on-surface">Next.js</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-label tracking-widest uppercase text-on-surface">React</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-label tracking-widest uppercase text-on-surface">Streak JS</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-label tracking-widest uppercase text-on-surface">Tailwind CSS</span>
+<span class="px-4 py-2 bg-surface-container-highest rounded-full text-xs font-label tracking-widest uppercase text-on-surface">TypeScript</span>
+</div>
+</div>
+<div class="mt-12 h-px bg-gradient-to-r from-primary/40 to-transparent"></div>
+<p class="mt-6 text-on-surface-variant text-sm font-body leading-relaxed max-w-md">
+                    Building fluid, accessible, and high-fidelity user experiences with a focus on component modularity and reactive state management.
+                </p>
+</div>
+<!-- Performance Card -->
+<div class="md:col-span-4 bg-surface-container p-8 relative overflow-hidden group border-l border-primary/10">
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary mb-6 scale-110" data-icon="bolt">bolt</span>
+<h2 class="text-[10px] tracking-[0.3em] uppercase text-on-surface-variant font-label mb-2">Optimization</h2>
+<h3 class="text-3xl font-headline font-bold mb-6">Performance</h3>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Lighthouse Audits
+                            </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Web Workers
+                            </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant group-hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Script Optimization
+                            </li>
+</ul>
+</div>
+<div class="mt-12 p-4 bg-primary/5 rounded-lg border border-primary/10 text-[10px] uppercase tracking-tighter text-primary font-bold">
+                        Target: Sub-100ms LCP
+                    </div>
+</div>
+</div>
+<!-- Backend Card -->
+<div class="md:col-span-5 bg-surface-container p-8 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary mb-6" data-icon="database">database</span>
+<h2 class="text-[10px] tracking-[0.3em] uppercase text-on-surface-variant font-label mb-2">Infrastructural Root</h2>
+<h3 class="text-3xl font-headline font-bold mb-6">Backend &amp; DB</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low rounded-lg">
+<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-1">Logic</p>
+<p class="text-sm font-bold">Node.js</p>
+<p class="text-sm font-bold">Spring Boot</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg">
+<p class="text-[10px] text-neutral-500 uppercase tracking-widest mb-1">Storage</p>
+<p class="text-sm font-bold">MongoDB</p>
+<p class="text-sm font-bold">PostgreSQL</p>
+</div>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-all duration-700">
+<span class="material-symbols-outlined text-[150px]" data-icon="schema">schema</span>
+</div>
+</div>
+<!-- DevOps Card -->
+<div class="md:col-span-7 bg-surface-container-low p-8 md:p-12 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+<div class="relative z-10 flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-1">
+<h2 class="text-[10px] tracking-[0.3em] uppercase text-primary font-label mb-4">Continuum</h2>
+<h3 class="text-4xl font-headline font-bold mb-6">Cloud &amp; DevOps</h3>
+<p class="text-on-surface-variant text-sm font-body leading-relaxed mb-8">
+                            Containerization and CI/CD orchestration focused on high-availability and zero-downtime deployments.
+                        </p>
+</div>
+<div class="flex-1 flex flex-col gap-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-highest/20 border-l-2 border-primary">
+<span class="text-sm font-bold tracking-widest">AZURE</span>
+<span class="material-symbols-outlined text-primary" data-icon="cloud">cloud</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-highest/20 border-l-2 border-primary">
+<span class="text-sm font-bold tracking-widest">DOCKER</span>
+<span class="material-symbols-outlined text-primary" data-icon="package_2">package_2</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-highest/20 border-l-2 border-primary">
+<span class="text-sm font-bold tracking-widest">JENKINS</span>
+<span class="material-symbols-outlined text-primary" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-highest/20 border-l-2 border-primary">
+<span class="text-sm font-bold tracking-widest">BUN</span>
+<span class="material-symbols-outlined text-primary" data-icon="speed">speed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- System Architecture Visual Section -->
+<section class="mt-24 bg-surface-container-lowest p-8 md:p-16 border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #4edea3 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="relative z-10 text-center max-w-2xl mx-auto">
+<h4 class="text-primary font-headline font-bold text-lg mb-6 tracking-widest uppercase">The Methodology</h4>
+<h2 class="text-3xl md:text-5xl font-headline font-bold mb-8 leading-tight">SYSTEMS OVER SOLUTIONS</h2>
+<p class="text-on-surface-variant leading-loose mb-12">
+                     I don't just build features; I engineer scalable ecosystems. Every line of code is measured against the criteria of maintainability, observability, and performance.
+                 </p>
+<a class="inline-flex items-center gap-4 bg-gradient-to-br from-primary to-primary-container px-10 py-5 text-on-primary font-headline font-bold tracking-widest rounded-md hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20" href="#">
+                    VIEW SYSTEM ARCHITECTURE
+                    <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-1/2 -translate-x-1/2 flex gap-8 items-center z-50 bg-neutral-900/60 backdrop-blur-xl rounded-full px-4 py-2 shadow-2xl shadow-emerald-900/20 md:hidden">
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined scale-110" data-icon="home_app_logo">home_app_logo</span>
+</a>
+<a class="bg-emerald-500/10 text-emerald-400 rounded-full p-3 transition-all scale-110" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+</a>
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined scale-110" data-icon="psychology">psychology</span>
+</a>
+<a class="text-neutral-500 p-3 hover:bg-neutral-800/50 rounded-full transition-all" href="#">
+<span class="material-symbols-outlined scale-110" data-icon="mail">mail</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="w-full border-t border-neutral-800/20 bg-neutral-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 gap-6 w-full max-w-7xl mx-auto">
+<div class="font-space-grotesk font-bold text-neutral-200">
+<span class="text-primary">OBSIDIAN</span> ARCHITECT
+            </div>
+<div class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-500 text-center">
+                © 2024 OBSIDIAN ARCHITECT. ENGINEERED FOR PERFORMANCE.
+            </div>
+<div class="flex gap-8">
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">GITHUB</a>
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">LINKEDIN</a>
+<a class="font-inter text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-neutral-200 transition-colors" href="#">SOURCE</a>
+</div>
+</div>
+</footer>
+</body></html>
