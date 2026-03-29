@@ -43,6 +43,14 @@ const server = Bun.serve({
       });
     }
 
+    // Serve static files from public/
+    if (!pathname.startsWith("/__")) {
+      const staticFile = Bun.file(`./public${pathname}`);
+      if (await staticFile.exists()) {
+        return new Response(staticFile);
+      }
+    }
+
     // Also match /arsenal/ → /arsenal
     const normalizedPath = pathname.replace(/\/$/, "") || "/";
     const matchedRoute = routes.find((r) => r.path === normalizedPath);

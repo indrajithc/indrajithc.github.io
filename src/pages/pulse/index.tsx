@@ -19,12 +19,7 @@ export default function PulsePage({ data, translations }: PageData<PulseData>) {
   const { pulse } = data;
 
   return (
-    <Layout
-      title="Engineering Pulse | Indrajith C."
-      extraStyles={`
-        .contribution-cell { width: 12px; height: 12px; border-radius: 2px; }
-      `}
-    >
+    <Layout title="Engineering Pulse | Indrajith C.">
       <div className="bg-surface-container-lowest text-on-surface selection:bg-primary/30 selection:text-primary">
         <Nav activePage="pulse" translations={translations} />
 
