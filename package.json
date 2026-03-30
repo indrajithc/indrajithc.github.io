@@ -10,6 +10,9 @@
     "css:build": "bunx tailwindcss -i ./src/styles/global.css -o ./public/styles.css --minify"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/material-symbols-outlined": "^5.2.39",
+    "@fontsource/space-grotesk": "^5.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

@@ -1,6 +1,6 @@
 import { renderPage } from "./src/lib/renderer";
 import { routes } from "./src/lib/router";
-import { mkdir, readdir, copyFile } from "fs/promises";
+import { mkdir, readdir, copyFile, stat } from "fs/promises";
 import { join } from "path";
 
 const OUT_DIR = "./out";
@@ -29,13 +29,25 @@ async function compileCss() {
   console.log("  ✓ public/styles.css");
 }
 
-async function copyPublicToOut() {
-  await mkdir(OUT_DIR, { recursive: true });
-  const files = await readdir(PUBLIC_DIR);
-  for (const file of files) {
-    await copyFile(join(PUBLIC_DIR, file), join(OUT_DIR, file));
-    console.log(`  ✓ public/${file} → out/${file}`);
+async function copyDir(src: string, dest: string, rel = "") {
+  await mkdir(dest, { recursive: true });
+  const entries = await readdir(src);
+  for (const entry of entries) {
+    const srcPath = join(src, entry);
+    const destPath = join(dest, entry);
+    const info = await stat(srcPath);
+    if (info.isDirectory()) {
+      await copyDir(srcPath, destPath, rel ? `${rel}/${entry}` : entry);
+    } else {
+      await copyFile(srcPath, destPath);
+      const label = rel ? `${rel}/${entry}` : entry;
+      console.log(`  ✓ public/${label} → out/${label}`);
+    }
   }
+}
+
+async function copyPublicToOut() {
+  await copyDir(PUBLIC_DIR, OUT_DIR);
 }
 
 async function build() {
